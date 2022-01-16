@@ -1,7 +1,7 @@
 {
   "name": "ahj-dom",
   "version": "1.0.0",
-  "description": "Netology homeworks"
+  "description": "Netology homeworks",
   "main": "index.js",
   "scripts": {
     "serve": "webpack serve --config webpack.dev.js",

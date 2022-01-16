@@ -6,6 +6,8 @@ module.exports = {
   target: 'web',
   output: {
     path: path.resolve(__dirname, 'dist'),
+    filename: './app.js',
+    assetModuleFilename: 'img/[hash][ext][query]',
   },
   module: {
     rules: [
@@ -34,6 +36,10 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader, 'css-loader',
         ],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },
